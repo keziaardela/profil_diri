@@ -1,105 +1,117 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Diri</title>
-    <link rel="icon" type="image/png" href="foto.img/logo.png"> <!-- favicon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <button class="menu-toggle" id="toggleBtn"><i class="fas fa-ellipsis-v"></i></button>
+    </div>
+    <a href="#biografi"><i class="fa-solid fa-user"></i> <span>Biografi</span></a>
+    <a href="#pendidikan"><i class="fa-solid fa-graduation-cap"></i> <span>Pendidikan</span></a>
+    <a href="#hobi"><i class="fa-solid fa-heart"></i> <span>Hobi</span></a>
+    <a href="#organisasi"><i class="fa-solid fa-users"></i> <span>Organisasi</span></a>
+    <a href="#kontak"><i class="fa-solid fa-envelope"></i> <span>Kontak</span></a>
+  </aside>
+
+  <main>
     <header>
-        <h1 style="text-align: center;">Profil Mahasiswa</h1>
-        <hr>
-        <!-- Navigasi di tengah -->
-        <nav style="text-align: center; font-size: 18px;">
-            <a href="#pendidikan">Riwayat Pendidikan</a> |
-            <a href="#hobi">Hobi</a> |
-            <a href="#organisasi">Pengalaman Organisasi</a>
-        </nav>
-        <hr>
+      <h1>Profil Mahasiswa</h1>
+
+      <!-- Navigasi Biru -->
+      <div class="nav-biru">
+        <a href="#pendidikan">Riwayat Pendidikan</a>
+        <a href="#hobi">Hobi</a>
+        <a href="#organisasi">Pengalaman Organisasi</a>
+      </div>
     </header>
 
-    <!-- Biografi -->
     <section id="biografi">
-        <h2>Biografi</h2>
-        <img src="foto.img/paspoto.jpg" alt="Foto Profil" width="150">
-        <p><b>Nama:</b> Kezia Ardela Pinem</p>
-        <p><b>Alamat:</b> Jl. Poh Gading No.47 Jimbaran, Bali</p>
-        <p><b>Email:</b> keziapnm2104@gmail.com</p>
-        <p>
-            <b>Media Sosial:</b><br>
-            <a href="https://www.instagram.com/keziardlaa?igsh=MTk1ZnZoeDhraDYybA==" target="_blank">
-                Instagram
-            </a> |
-            <a href="http://www.linkedin.com/in/kezia-ardela-pinem-015b7a329" target="_blank">
-                LinkedIn
-            </a> |
-            <a href="https://www.tiktok.com/@4rdela?_t=ZS-8znwD7FXovq&_r=1" target="_blank">
-                TikTok
-            </a>
-        </p>
+      <h2>Biografi</h2>
+      <div class="bio-container">
+        <img src="foto.img/paspoto.jpg" alt="Foto Profil">
+        <div class="bio-info">
+          <p><b>Nama:</b> Kezia Ardela Pinem</p>
+          <p><b>Alamat:</b> Jl. Poh Gading No.47 Jimbaran, Bali</p>
+          <p><b>Email:</b> keziapnm2104@gmail.com</p>
+          <p><b>Media Sosial:</b><br>
+            <a href="https://www.instagram.com/keziardlaa" target="_blank">Instagram</a> |
+            <a href="http://www.linkedin.com/in/kezia-ardela-pinem-015b7a329" target="_blank">LinkedIn</a> |
+            <a href="https://www.tiktok.com/@4rdela" target="_blank">TikTok</a>
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Riwayat Pendidikan -->
     <section id="pendidikan">
-        <h2>Riwayat Pendidikan</h2>
-        <ul>
-            <li>SD Bethany Medan</li>
-            <li>SMP Putri Cahaya Medan</li>
-            <li>SMA Santo Thomas Medan</li>
-        </ul>
+      <h2>Riwayat Pendidikan</h2>
+      <ul>
+        <li>SD Bethany Medan</li>
+        <li>SMP Putri Cahaya Medan</li>
+        <li>SMA Santo Thomas Medan</li>
+      </ul>
     </section>
 
-    <!-- Hobi -->
     <section id="hobi">
-        <h2>Hobi</h2>
-        <ol>
-            <li>Traveling</li>
-            <li>Tidur</li>
-            <li>Kulineran</li>
-        </ol>
+      <h2>Hobi</h2>
+      <ol>
+        <li>Traveling</li>
+        <li>Tidur</li>
+        <li>Kulineran</li>
+      </ol>
     </section>
 
-    <!-- Pengalaman Organisasi -->
     <section id="organisasi">
-        <h2>Pengalaman Organisasi</h2>
-        <table border="1" cellpadding="5" cellspacing="0">
-            <tr>
-                <th>Nama Organisasi</th>
-                <th>Jabatan</th>
-                <th>Tahun</th>
-            </tr>
-            <tr>
-                <td>OSIS SMA Santo Thomas Medan</td>
-                <td>Anggota</td>
-                <td>2022 - 2023</td>
-            </tr>
-            <tr>
-                <td>Seminar Kewirausahaan Fakultas Teknik</td>
-                <td>Angggota sie Kesekhum</td>
-                <td>2025</td>
-            </tr>
-        </table>
+      <h2>Pengalaman Organisasi</h2>
+      <table>
+        <tr>
+          <th>Nama Organisasi</th>
+          <th>Jabatan</th>
+          <th>Tahun</th>
+        </tr>
+        <tr>
+          <td>OSIS SMA Santo Thomas Medan</td>
+          <td>Anggota</td>
+          <td>2022 - 2023</td>
+        </tr>
+        <tr>
+          <td>Seminar Kewirausahaan Fakultas Teknik</td>
+          <td>Anggota Sie Kesekhum</td>
+          <td>2025</td>
+        </tr>
+      </table>
     </section>
 
-    <!-- Form Kontak -->
     <section id="kontak">
-        <h2>Kontak</h2>
-        <form>
-            <label for="nama">Nama:</label><br>
-            <input type="text" id="nama" name="nama"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="pesan">Pesan:</label><br>
-            <textarea id="pesan" name="pesan"></textarea><br><br>
-            <input type="submit" value="Kirim">
-        </form>
+      <h2>Kontak</h2>
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan"></textarea>
+
+        <input type="submit" value="Kirim">
+      </form>
     </section>
 
-    <footer>
-        <hr>
-        <p style="text-align: center;">&copy; 2025 Profil Mahasiswa</p>
-    </footer>
+    <footer>&copy; 2025 Profil Mahasiswa</footer>
+  </main>
+
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('toggleBtn');
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('closed');
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fb;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  background-color: #2b4c7e;
+  color: white;
+  width: 230px;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 15px 0;
+}
+
+.sidebar.closed {
+  width: 70px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+
+.menu-toggle {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: #3d5a91;
+}
+
+.sidebar.closed a span {
+  display: none;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  flex: 1;
+  padding: 20px 40px;
+  margin-left: 230px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.closed ~ main {
+  margin-left: 70px;
+}
+
+/* ===== HEADER (JUDUL ATAS) ===== */
+header {
+  text-align: center;
+  color: #2b4c7e;
+  font-size: 22px; /* sebelumnya 28px */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* ===== NAVIGASI BAWAH JUDUL ===== */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2b4c7e;
+  background-color: #dce6f8;
+  padding: 6px 14px;
+  border-radius: 8px;
+  margin: 0 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background-color: #2b4c7e;
+  color: white;
+}
+
+/* ===== SECTION ===== */
+section {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #2b4c7e;
+  border-bottom: 2px solid #a0c4ff;
+  padding-bottom: 5px;
+}
+
+/* ===== BIOGRAFI ===== */
+.bio-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bio-container img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.bio-info p {
+  margin: 6px 0;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #2b4c7e;
+  color: white;
+}
+
+/* ===== FORM ===== */
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #2b4c7e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1a3a63;
+}
+
+footer {
+  text-align: center;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px;
+  }
+  .sidebar.closed {
+    width: 0;
+  }
+  main {
+    margin-left: 70px;
+  }
+  .sidebar.closed ~ main {
+    margin-left: 0;
+  }
+}
